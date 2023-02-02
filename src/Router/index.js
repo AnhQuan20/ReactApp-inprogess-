@@ -22,7 +22,7 @@ export default class Index extends Component {
 
     tabRow() {
         return this.state.persons.map(function (object, i) {
-            return <TableRow obj={object} key={i}/>;
+            return ()=> <TableRow obj={object} key={i}/>;
         });
     }
 
@@ -39,7 +39,7 @@ export default class Index extends Component {
                     </tr>
                     </thead>
                     <tbody>
-                    {()=>{this.tabRow()}}
+                    {this.tabRow()}
                     </tbody>
                 </table>
         </div>

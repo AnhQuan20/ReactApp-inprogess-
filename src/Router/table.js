@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 
- function TableRow(){
+function TableRow() {
+
     return (
         <tr>
           <td>
@@ -21,8 +22,9 @@ import React, { Component } from 'react';
           </td>
         </tr>
     );
-
 }
+
+
 
 export default TableRow;
 
