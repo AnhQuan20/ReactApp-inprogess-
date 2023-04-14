@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import TableRow from './table';
-import axios from 'axios';
+// index.component.js
 
+import React, {Component} from 'react';
+import axios from 'axios';
+import TableRow from './table';
 
 export default class Index extends Component {
     constructor(props) {
@@ -22,14 +23,15 @@ export default class Index extends Component {
 
     tabRow() {
         return this.state.persons.map(function (object, i) {
-            return ()=> <TableRow obj={object} key={i}/>;
+            return <TableRow obj={object} key={i}/>;
         });
     }
 
-    render(){
-    return(
-        <div>
-                    <table style={{marginTop: 20}}>
+    render() {
+        return (
+            <div>
+                <h3 align="center">Persons List</h3>
+                <table className="table table-striped" style={{marginTop: 20}}>
                     <thead>
                     <tr>
                         <th>Name</th>
@@ -42,9 +44,7 @@ export default class Index extends Component {
                     {this.tabRow()}
                     </tbody>
                 </table>
-        </div>
-     
-    )
+            </div>
+        );
     }
 }
-

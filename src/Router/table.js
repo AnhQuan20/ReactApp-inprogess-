@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 
-function TableRow() {
+class TableRow extends Component {
+  render() {
 
     return (
         <tr>
@@ -22,6 +23,7 @@ function TableRow() {
           </td>
         </tr>
     );
+}
 }
 
 
