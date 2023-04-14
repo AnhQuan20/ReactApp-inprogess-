@@ -15,6 +15,7 @@ function App() {
     <a href="/Create">Create</a>
     <a href="/Index">Index</a>
     </nav>
+    <h1></h1>
 
 
     <Routes>
